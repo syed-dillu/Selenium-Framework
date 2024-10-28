@@ -13,9 +13,7 @@ from config.config import *
 @allure.severity(allure.severity_level.CRITICAL)
 class TestSignUp:
 
-    @pytest.fixture(scope='function', autouse=True)
-    @allure.step("SignUp Page Setup")
-
+    @pytest.fixture(scope='class', autouse=True)
     def signup_fixture(self):
         self.sign = SignUp_Page(self.driver)
 

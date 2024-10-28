@@ -5,8 +5,8 @@ sys.path.append(os.getcwd())
 from utils.common_imports import *
 from utils.logger import *
 
+@allure.step("Setup the browser")
 @pytest.fixture(scope='class',autouse=True)
-@allure.step("Setup Browser")
 def setup_fixture(request):
 
     if request.config.getoption('--firefox'):
@@ -20,7 +20,7 @@ def setup_fixture(request):
     
 
     request.cls.driver = driver
-    yield
+    yield driver
     driver.quit()
 
     

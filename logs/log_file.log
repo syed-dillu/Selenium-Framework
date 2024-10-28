@@ -1,0 +1,251 @@
+28-10-2024 20:24:14 - ERROR - Error at retrieving text of the element ('xpath', "//h2[contains(text(),'99')]") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Title of the Page is None
+28-10-2024 20:24:14 - INFO - The title is None
+28-10-2024 20:24:14 - ERROR - Error Filling text on a element ('css selector', "input[name='uid']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Username is sam@gmail.com
+28-10-2024 20:24:14 - ERROR - Error Filling text on a element ('css selector', "input[name='password']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Password is sam@123
+28-10-2024 20:24:14 - ERROR - Error Clicking on the element ('css selector', "input[name='btnLogin']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Button clicked
+28-10-2024 20:24:14 - ERROR - Error Filling text on a element ('css selector', "input[name='uid']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Username is max@gmail.com
+28-10-2024 20:24:14 - ERROR - Error Filling text on a element ('css selector', "input[name='password']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Password is max@123
+28-10-2024 20:24:14 - ERROR - Error Clicking on the element ('css selector', "input[name='btnLogin']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Button clicked
+28-10-2024 20:24:14 - ERROR - Error Filling text on a element ('css selector', "input[name='uid']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Username is will@gmail.com
+28-10-2024 20:24:14 - ERROR - Error Filling text on a element ('css selector', "input[name='password']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Password is will@123
+28-10-2024 20:24:14 - ERROR - Error Clicking on the element ('css selector', "input[name='btnLogin']") : Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67E1A3AB5+28005]
+	(No symbol) [0x00007FF67E1083B0]
+	(No symbol) [0x00007FF67DFA580A]
+	(No symbol) [0x00007FF67DF7FA85]
+	(No symbol) [0x00007FF67E022AD7]
+	(No symbol) [0x00007FF67E03B1B1]
+	(No symbol) [0x00007FF67E01B7E3]
+	(No symbol) [0x00007FF67DFE75C8]
+	(No symbol) [0x00007FF67DFE8731]
+	GetHandleVerifier [0x00007FF67E49643D+3118829]
+	GetHandleVerifier [0x00007FF67E4E6C90+3448640]
+	GetHandleVerifier [0x00007FF67E4DCF0D+3408317]
+	GetHandleVerifier [0x00007FF67E26A40B+841403]
+	(No symbol) [0x00007FF67E11340F]
+	(No symbol) [0x00007FF67E10F484]
+	(No symbol) [0x00007FF67E10F61D]
+	(No symbol) [0x00007FF67E0FEB79]
+	BaseThreadInitThunk [0x00007FFF4171257D+29]
+	RtlUserThreadStart [0x00007FFF42B2AF28+40]
+
+28-10-2024 20:24:14 - INFO - Button clicked
