@@ -1,0 +1,31 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git url: 'https://github.com/your_username/your_repository.git', branch: 'main'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                sh 'pip install -r requirements.txt' // Install Python dependencies
+            }
+        }
+        stage('Run Tests') {
+            steps {
+                sh 'pytest --alluredir=report/allure_results' // Run your tests
+            }
+        }
+        stage('Generate Allure Report') {
+            steps {
+                sh 'allure serve report/allure_results' // Generate and serve Allure report
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'allure_results/*', fingerprint: true // Archive test results
+        }
+    }
+}
