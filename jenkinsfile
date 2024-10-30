@@ -14,7 +14,6 @@ pipeline {
                 echo "Build the setup"
                 bat '''
                 python -m venv myenv
-                pip install pytest-cov
                 call myenv\\Scripts\\activate.bat
                 '''
             }
@@ -22,27 +21,19 @@ pipeline {
 
         stage ("Test") {
             steps {
-                echo "Testing.."
+                echo "Test and genrate reports [Coverage report / Allure Report / HTML Report]."
                 bat '''
                 run_script.bat
                 '''
             }
         }
 
-        stage("Publish Allure Report") {
-            steps {
-                echo "Publishing Allure report.."
-                allure([
-                    results: [[path: 'report/allure-results']],
-                    report: 'report/allure-report'
-                ])
-            }
-        }
     }
     
     post {
         always {
-            archiveArtifacts artifacts: 'report/allure-results/**', allowEmptyArchive: true
+            echo "Cleaning up workspace..."
+            cleanWs()
         }
     }
 }
