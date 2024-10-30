@@ -28,6 +28,12 @@ pipeline {
                 '''
             }
         }
+        stage('Post-Test Actions') {
+            steps {
+                // Any additional steps after tests can go here
+                echo 'Tests completed. Reports generated.'
+            }
+        }
     }
     
     post {
