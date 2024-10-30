@@ -1,0 +1,47 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Clone the project'
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: '5ba3cd8d-7c07-4c70-b7d4-f338cc5316d0', url: 'https://github.com/syed-dillu/Selenium-Framework.git']])
+            }
+        }
+
+        stage("Build") {
+            steps {
+                echo "Build the setup"
+                bat '''
+                python -m venv myenv
+                call myenv\\Scripts\\activate.bat
+                '''
+            }
+        }
+
+        stage ("Test") {
+            steps {
+                echo "Testing.."
+                bat '''
+                pytest
+                '''
+            }
+        }
+
+        stage("Publish Allure Report") {
+            steps {
+                echo "Publishing Allure report.."
+                allure([
+                    results: [[path: 'report/allure-results']],
+                    report: 'report/allure-report'
+                ])
+            }
+        }
+    }
+    
+    post {
+        always {
+            archiveArtifacts artifacts: 'report/allure-results/**', allowEmptyArchive: true
+        }
+    }
+}
