@@ -14,7 +14,7 @@ pipeline {
                 echo "Build the setup"
                 bat '''
                 python -m venv myenv
-                pip install -r requirements.txt
+                pip install pytest-cov
                 call myenv\\Scripts\\activate.bat
                 '''
             }
@@ -28,10 +28,14 @@ pipeline {
                 '''
             }
         }
-        stage('Post-Test Actions') {
+
+        stage("Publish Allure Report") {
             steps {
-                // Any additional steps after tests can go here
-                echo 'Tests completed. Reports generated.'
+                echo "Publishing Allure report.."
+                allure([
+                    results: [[path: 'report/allure-results']],
+                    report: 'report/allure-report'
+                ])
             }
         }
     }
