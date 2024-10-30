@@ -1,0 +1,2 @@
+30-10-2024 10:44:37 - [32mINFO[0m - SignUp Title : Contact Information
+30-10-2024 10:44:37 - [32mINFO[0m - SignUp Title Retrieved: Contact Information

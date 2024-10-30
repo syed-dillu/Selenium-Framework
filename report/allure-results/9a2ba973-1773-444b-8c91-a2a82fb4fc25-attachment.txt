@@ -1,0 +1,2 @@
+30-10-2024 10:44:40 - [32mINFO[0m - Screenshot Taken
+30-10-2024 10:44:40 - [32mINFO[0m - Entered Last Name: Anderson
