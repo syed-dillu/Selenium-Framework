@@ -29,12 +29,13 @@ pipeline {
             }
         }
 
-         stage('Publish Allure Report') {
+        stage('Publish Allure Report') {
             steps {
-                echo 'Publishing Allure report...'
+                echo "Generate the Allure report"
                 allure([
-                    results: [[path: 'report/allure-results']],
-                    report: 'report/allure-report'
+                    results: [[path: 'reports/allure-results']],
+                    report: 'reports/allure-report',
+                    allowEmptyResults: true 
                 ])
             }
         }
