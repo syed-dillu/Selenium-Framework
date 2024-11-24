@@ -1,17 +1,23 @@
-# byte code
-.pytest_cache
+# Bytecode and pytest cache
+.pytest_cache/
 __pycache__/
 *.py[cod]
-archive/
-logs
 
-# environments
+# Logs and archives
+logs/
+archive/
+
+# Environments and configs
 myenv/
 config/.env
 
-# IDE
-.vscode
+# IDE specific files
+.vscode/
 
-# report
+# Reports
+report/
 
-report
+# General system files
+*.log
+.DS_Store
+Thumbs.db
