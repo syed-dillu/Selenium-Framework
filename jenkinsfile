@@ -19,6 +19,16 @@ pipeline {
             }
         }
 
+        stage('Install Dependencies') {
+            steps {
+                echo 'Installing dependencies...'
+                bat '''
+                @echo off
+                pip show -q -r requirements.txt || pip install -r requirements.txt
+                '''
+            }
+        }
+
         stage ("Test") {
             steps {
                 echo "Testing..."
@@ -51,6 +61,12 @@ pipeline {
         always {
             echo "Cleaning up workspace..."
             cleanWs()
+        }
+        failure {
+            echo "Build Failed"
+        }
+        success {
+            echo "Build Completed successfully"
         }
     }
 }
