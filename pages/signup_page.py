@@ -14,7 +14,7 @@ class SignUp_Page(SeleniumHelper):
     SIGNUP_FIRST_HEAD = (By.XPATH,"//input[contains(@name,'firstName')]/preceding::b[contains(text(),'First')]")
     SIGNUP_LAST_HEAD = (By.XPATH,"//input[contains(@name,'lastName')]/preceding::b[contains(text(),'Last')]")
     SIGNUP_FIRST = (By.XPATH,"//input[contains(@name,'firstName')]")
-    SIGNUP_LAST = (By.XPATH,"//input[contains(@name,'lastName')]")
+    SIGNUP_LAST = (By.XPATH,"//input[contains(@name,'latName')]")
 
     
     @allure.step("Enter the URL")

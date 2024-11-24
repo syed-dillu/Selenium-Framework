@@ -1,6 +1,7 @@
 from pathlib import Path
 import logging
 from logging.handlers import RotatingFileHandler
+from datetime import datetime
 
 log_dir = Path("logs")
 log_dir.mkdir(exist_ok=True)
@@ -30,3 +31,13 @@ def log_info(msg):
 def log_error(msg):
     logger.error(msg)
 
+def store_screenshot() -> str:
+    today = datetime.today()
+    frm = today.strftime("%d-%m-%Y %H-%M-%S")
+
+    screen_shot = Path("screen_shots")
+    screen_shot.mkdir(exist_ok=True)
+
+    screens = screen_shot / f"failed_sreens_{frm}.png"
+
+    return str(screens)
