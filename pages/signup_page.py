@@ -40,7 +40,7 @@ class SignUp_Page(SeleniumHelper):
     
     @allure.step("Enter First Name")
     def enter_first_enter(self,name:str) -> None:
-        self.fill_text(*self.SIGNUP_FIRST, value=name)
+        self.fill_text(self.SIGNUP_FIRST, value=name)
 
 
     @allure.step("Retrieve the Last Name heading")
@@ -51,7 +51,7 @@ class SignUp_Page(SeleniumHelper):
     
     @allure.step("Enter the Last Name")
     def enter_last_enter(self,name:str) -> None:
-        self.fill_text(*self.SIGNUP_LAST, value=name)
+        self.fill_text(self.SIGNUP_LAST, value=name)
         time.sleep(2)
         allure.attach(self.driver.get_screenshot_as_png(),name="SIGNUP",attachment_type=AttachmentType.PNG)
         log_info("Screenshot Taken")
