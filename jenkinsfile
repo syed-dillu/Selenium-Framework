@@ -14,7 +14,6 @@ pipeline {
                 echo "Build the setup"
                 bat '''
                 python -m venv myenv
-                pip install pytest-cov
                 call myenv\\Scripts\\activate.bat
                 '''
             }
@@ -31,11 +30,10 @@ pipeline {
 
         stage('Publish Allure Report') {
             steps {
-                echo "Generate the Allure report"
+                echo 'Publishing Allure report...'
                 allure([
-                    results: [[path: 'reports/allure-results']],
-                    report: 'reports/allure-report',
-                    allowEmptyResults: true 
+                    results: [[path: 'report/allure-results']],
+                    report: 'report/allure-report'
                 ])
             }
         }

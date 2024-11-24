@@ -14,7 +14,6 @@ config : dict[str,str] = {
     "TEST_DATA"  :  dir / "data" / "test_data.xlsx"
 }
 
-
 def get_url() -> str:
     return config["URL"]
 

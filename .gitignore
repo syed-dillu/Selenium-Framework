@@ -1,3 +1,17 @@
+# byte code
+.pytest_cache
+__pycache__/
+*.py[cod]
+archive/
+logs
+
+# environments
 myenv/
 config/.env
+
+# IDE
 .vscode
+
+# report
+
+report

@@ -1,28 +1,32 @@
-import os
-import sys
-sys.path.append(os.getcwd())
-from utils.common_imports import *
+from pathlib import Path
+import logging
+from logging.handlers import RotatingFileHandler
 
-if not os.path.exists('logs'):
-    os.makedirs('logs')
+log_dir = Path("logs")
+log_dir.mkdir(exist_ok=True)
 
-file_name = Path("logs") / f"log_file.log"
+log_file = log_dir / "log_data.log"
 
-log.basicConfig(
-    filename=file_name,
-    level=log.INFO,
-    format="%(asctime)s - %(levelname)s - %(message)s",
-    datefmt="%d-%m-%Y %H:%M:%S"
+logger = logging.getLogger("custome-logger")
+logger.setLevel(level=logging.DEBUG)
+
+file_handler = RotatingFileHandler(log_file)
+console_handler = logging.StreamHandler()
+
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
+
+formatter = logging.Formatter(
+    fmt= "%(asctime)s - %(levelname)s - %(message)s",
+    datefmt= "%d-%m-%Y %H:%M:%S"
 )
 
-logg = log.getLogger()
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
 
 def log_info(msg):
-    logg.info(msg,stack_info=False)
+    logger.info(msg)
 
 def log_error(msg):
-    logg.error(msg,stack_info=False)
-
-def log_critical(msg):
-    logg.critical(msg,stack_info=False)
+    logger.error(msg)
 

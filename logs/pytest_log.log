@@ -1,27 +1,17 @@
-30-10-2024 14:32:06 - INFO - Title of the Page is Guru99 Bank
-30-10-2024 14:32:06 - INFO - The title is None
-30-10-2024 14:32:06 - INFO - Username is sam@gmail.com
-30-10-2024 14:32:06 - INFO - Password is sam@123
-30-10-2024 14:32:06 - INFO - Button clicked
-30-10-2024 14:32:07 - INFO - the alert message is : User or Password is not valid
-30-10-2024 14:32:08 - INFO - Screenshot Retrieved
-30-10-2024 14:32:09 - INFO - Username is max@gmail.com
-30-10-2024 14:32:09 - INFO - Password is max@123
-30-10-2024 14:32:09 - INFO - Button clicked
-30-10-2024 14:32:10 - INFO - the alert message is : User or Password is not valid
-30-10-2024 14:32:11 - INFO - Screenshot Retrieved
-30-10-2024 14:32:12 - INFO - Username is will@gmail.com
-30-10-2024 14:32:12 - INFO - Password is will@123
-30-10-2024 14:32:12 - INFO - Button clicked
-30-10-2024 14:32:14 - INFO - the alert message is : User or Password is not valid
-30-10-2024 14:32:15 - INFO - Screenshot Retrieved
-30-10-2024 14:32:21 - INFO - Enter the URL
-30-10-2024 14:32:21 - INFO - SignUp Title : Contact Information
-30-10-2024 14:32:21 - INFO - SignUp Title Retrieved: Contact Information
-30-10-2024 14:32:21 - INFO - First Name Title : First Name:
-30-10-2024 14:32:21 - INFO - First Heading Retrieved: First Name:
-30-10-2024 14:32:21 - INFO - Entered First Name: sam
-30-10-2024 14:32:21 - INFO - Last Name Title : Last Name:
-30-10-2024 14:32:21 - INFO - Last Heading Retrieved: Last Name:
-30-10-2024 14:32:24 - INFO - Screenshot Taken
-30-10-2024 14:32:24 - INFO - Entered Last Name: Anderson
+23-11-2024 18:18:29 - INFO - Title of the Page is Guru99 Bank
+23-11-2024 18:18:29 - INFO - The title is None
+23-11-2024 18:18:29 - INFO - Username is sam@gmail.com
+23-11-2024 18:18:29 - INFO - Password is sam@123
+23-11-2024 18:18:30 - INFO - Button clicked
+23-11-2024 18:18:31 - INFO - the alert message is : User or Password is not valid
+23-11-2024 18:18:32 - INFO - Screenshot captured
+23-11-2024 18:18:32 - INFO - Username is max@gmail.com
+23-11-2024 18:18:32 - INFO - Password is max@123
+23-11-2024 18:18:33 - INFO - Button clicked
+23-11-2024 18:18:34 - INFO - the alert message is : User or Password is not valid
+23-11-2024 18:18:35 - INFO - Screenshot captured
+23-11-2024 18:18:35 - INFO - Username is will@gmail.com
+23-11-2024 18:18:35 - INFO - Password is will@123
+23-11-2024 18:18:36 - INFO - Button clicked
+23-11-2024 18:18:37 - INFO - the alert message is : User or Password is not valid
+23-11-2024 18:18:38 - INFO - Screenshot captured

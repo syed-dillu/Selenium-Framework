@@ -2,12 +2,10 @@ import os
 import sys
 sys.path.append(os.getcwd())
 from utils.common_imports import *
-from utils.logger import *
-from config.config import *
-from pages.base_page import BasePage
+from utils.logger import log_info
+from utils.selenium_helpers import SeleniumHelper
 
-class Login_Page(BasePage):
-
+class Login_Page(SeleniumHelper):
 
     PAGE_TITLE = (By.XPATH,"//h2[contains(text(),'99')]")
     LOGIN_NAME = (By.CSS_SELECTOR,"input[name='uid']")
@@ -25,12 +23,12 @@ class Login_Page(BasePage):
     
     @allure.step("Enter user name")
     def enter_name(self,name) -> None:
-        self.fill_text(*self.LOGIN_NAME,value=name)
+        self.fill_text(self.LOGIN_NAME,value=name)
         log_info(f"Username is {name}")
 
     @allure.step("Enter user password")
     def enter_pass(self,password) -> None:
-        self.fill_text(*self.LOGIN_PASS,value=password)
+        self.fill_text(self.LOGIN_PASS,value=password)
         log_info(f"Password is {password}")
 
     @allure.step("Click on submit button")

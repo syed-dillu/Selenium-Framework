@@ -1,5 +1,0 @@
-30-10-2024 14:32:12 - [32mINFO[0m - Username is will@gmail.com
-30-10-2024 14:32:12 - [32mINFO[0m - Password is will@123
-30-10-2024 14:32:12 - [32mINFO[0m - Button clicked
-30-10-2024 14:32:14 - [32mINFO[0m - the alert message is : User or Password is not valid
-30-10-2024 14:32:15 - [32mINFO[0m - Screenshot Retrieved
