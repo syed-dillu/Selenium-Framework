@@ -127,7 +127,7 @@ The Jenkins pipeline is defined in a Jenkinsfile at the root of the repository.
 
 **2. Setup Environment**: Creates a virtual environment and installs the required dependencies.
 
-**3. Run Unit and Integration Tests with Coverage**: Executes unit tests and generates a coverage report.
+**3. Run Test**: Executes the test.
 
 **4. Publish Coverage Report**: Archives the coverage report for further analysis.
 
