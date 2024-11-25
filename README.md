@@ -2,28 +2,6 @@
 
 This automation framework is designed for end-to-end testing of web applications. It uses **Python**, **Selenium**, and **Pytest**, providing a structured, modular, and scalable approach to testing. It supports data-driven testing, logging, reporting, and CI/CD integration.
 
-**Table of Contents**
----------------------
-
-1.  [Framework Overview](#framework-overview)
-    
-2.  [Folder Structure](#folder-structure)
-    
-3.  [Prerequisites](#prerequisites)
-    
-4.  [Installation](#installation)
-    
-5.  [Usage](#usage)
-    
-6.  [Configuration](#configuration)
-    
-7.  [Reporting](#reporting)
-    
-8.  [Contributing](#contributing)
-    
-9.  [License](#license)
-    
-
 **Framework Overview**
 ----------------------
 
