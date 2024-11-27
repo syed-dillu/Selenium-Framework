@@ -8,7 +8,6 @@ class AmazonPage(SeleniumHelper):
     SELECT_ELEMENT = (By.XPATH,"//select[@id = 'searchDropdownBox']")
     SCROLL_CLICK = (By.LINK_TEXT,"Mobiles")
 
-
     @allure.step("Enter the URL")
     def enter_url(self,url:str) -> None:
         self.site_url(url)

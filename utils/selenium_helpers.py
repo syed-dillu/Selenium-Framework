@@ -11,19 +11,18 @@ from utils.logger import log_error, log_info, store_screenshot
 
 class SeleniumHelper(BasePage):
 
-
     def fill_text(self, locator: tuple, value: str) -> None:
         """Fill the text box field using visibility"""
         try:
             element: WebElement = self.wait.until(EC.visibility_of_element_located(locator))
             element.clear()
             element.send_keys(value)
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name=value)
 
         except Exception as e:
             screens = store_screenshot()
             self.driver.save_screenshot(screens)
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name=value)
             log_error(f"Error filling text in the element {locator}: {str(e)}. Screenshot saved at {screens}")
             pytest.fail(f"Error filling text in the element {locator}: {str(e)}. Check screenshot at {screens}")
 
@@ -35,7 +34,7 @@ class SeleniumHelper(BasePage):
         except Exception as e:
             screens = store_screenshot()
             self.driver.save_screenshot(screens)
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name=locator[1])
             log_error(f"Error clicking on the element {locator}: {str(e)}. Screenshot saved at {screens}")
             pytest.fail(f"Error clicking on the element {locator}: {str(e)}. Check screenshot at {screens}")
 
@@ -49,7 +48,7 @@ class SeleniumHelper(BasePage):
             self.driver.save_screenshot(screens)
             log_error(f"Error retrieving the element {locator}: {str(e)}. Screenshot saved at {screens}")
             pytest.fail(f"Error retrieving the element {locator}: {str(e)}. Check screenshot at {screens}")
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name=locator[1])
 
     def get_elements(self, *locator: tuple) -> List[WebElement]:
         """Get the web elements using presence"""
@@ -61,7 +60,7 @@ class SeleniumHelper(BasePage):
             self.driver.save_screenshot(screens)
             log_error(f"Error retrieving all elements {locator}: {str(e)}. Screenshot saved at {screens}")
             pytest.fail(f"Error retrieving all elements {locator}: {str(e)}. Check screenshot at {screens}")
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name=locator[1])
 
     def get_text(self, *locator: tuple) -> str:
         """Get the text of the web element using visibility"""
@@ -73,7 +72,7 @@ class SeleniumHelper(BasePage):
             self.driver.save_screenshot(screens)
             log_error(f"Error retrieving text of the element {locator}: {str(e)}. Screenshot saved at {screens}")
             pytest.fail(f"Error retrieving text of the element {locator}: {str(e)}. Check screenshot at {screens}")
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name=locator[1])
 
     def allure_screenshot(self, screen_name: str) -> None:
         """Capture screenshot using Allure"""
@@ -102,7 +101,7 @@ class SeleniumHelper(BasePage):
             self.driver.save_screenshot(screens)
             log_error(f"Error handling the alert: {str(e)}. Screenshot saved at {screens}")
             pytest.fail(f"Error handling the alert: {str(e)}. Check screenshot at {screens}")
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name="alert")
 
     def select_element(self, *locator: tuple, text: str) -> None:
         """Select an option from a dropdown by visible text"""
@@ -115,7 +114,7 @@ class SeleniumHelper(BasePage):
             self.driver.save_screenshot(screens)
             log_error(f"Error selecting the element {locator}: {str(e)}. Screenshot saved at {screens}")
             pytest.fail(f"Error selecting the element {locator}: {str(e)}. Check screenshot at {screens}")
-            self.allure_screenshot(screen_name=locator)
+            self.allure_screenshot(screen_name=locator[1])
 
     def scroll_element(self, script: str, element: WebElement) -> None:
         """Scroll to a specific element using JavaScript"""

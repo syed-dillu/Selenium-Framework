@@ -18,6 +18,6 @@ class BasePage:
     
     def close_browser(self) -> None:
         self.driver.close()
-    
+
 if __name__ == "__main__":
-    BasePage()
+    BasePage(driver=webdriver.Chrome())

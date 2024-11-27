@@ -21,6 +21,7 @@ class TestLogin:
     def test_login_url(self):
         self.login.enter_url("https://demo.guru99.com/V4/index.php")
 
+
     @allure.severity(allure.severity_level.NORMAL)
     @allure.title("Check Title of Login")
     def test_get_title(self):
